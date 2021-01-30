@@ -1,0 +1,29 @@
+Samples for testing application
+
+//Post Request
+curl --location --request POST 'localhost:8080/' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name":"ParleG",
+    "code":"snacks",
+    "price":30.0,
+    "type":"FOOD_ITEM",
+    "availableCount":100
+}'
+
+//Get request
+curl --location --request GET 'localhost:8080/1'
+
+
+
+// Put Request
+curl --location --request PUT 'localhost:8080/13' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name":"oats",
+    "code":"Bf",
+    "availableCount":10
+}'
+
+// Delete request
+curl --location --request DELETE 'localhost:8080/13'
